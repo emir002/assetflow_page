@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kako AssetFlow radi</title>
+  <meta name="description" content="Detaljan pregled koraka: od spajanja digitalne imovine do otplate zajma." />
+
+  <!-- Open-Graph / Twitter -->
+  <meta property="og:title" content="Kako AssetFlow radi" />
+  <meta property="og:description" content="Detaljan pregled koraka rada platforme AssetFlow." />
+  <meta property="og:image" content="/assets/img/logo.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts & global CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+</head>
+
+<body>
+  <!-- ─────────────  SITE HEADER  ───────────── -->
+  <header id="site-header">
+    <nav>
+      <a href="/" class="logo-link">
+        <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="logo">
+      </a>
+
+      <a href="/#features">Značajke</a>
+      <a href="/#howitworks">Kako radi</a>
+      <a href="/#benefits">Prednosti</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#contact">Kontakt</a>
+
+      <span class="lang-switch">
+        <a href="/styled_kako-radi.html" aria-label="Bosanski">🇧🇦</a>
+        <a href="/en/styled_kako-radi.html" aria-label="English">🇬🇧</a>
+      </span>
+    </nav>
+  </header>
+
+  <!-- ─────────────  HERO  ───────────── -->
+  <section class="page-hero">
+    <h2>Kako AssetFlow radi</h2>
+  </section>
+
+  <!-- ─────────────  STEP-BY-STEP  ───────────── -->
+  <section id="howitworks">
+    <div class="grid grid-3">
+      <div class="step">
+        <div class="step-circle">1</div>
+        <h3>Povežite imovinu</h3>
+        <p>Autorizirajte kripto wallet ili gamerski račun da bismo prikazali vaša digitalna sredstva.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">2</div>
+        <h3>AI procjena & ponuda</h3>
+        <p>Naš AI engine u sekundi vrednuje imovinu i predlaže personalizirani LTV odnos.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">3</div>
+        <h3>Escrow & isplata</h3>
+        <p>Kolateral se zaključava u pametnom ugovoru, a fiat ili stablecoin sredstva stižu na vaš račun.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">4</div>
+        <h3>Otplata ili likvidacija</h3>
+        <p>Vratite glavnicu + kamatu i povratite imovinu, ili sustav automatski likvidira kolateral.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">5</div>
+        <h3>Poboljšajte reputaciju</h3>
+        <p>Na vrijeme podmireni zajmovi grade on-chain kreditni skor koji snižava buduće kamate.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">6</div>
+        <h3>Ponavljajte & zaradite</h3>
+        <p>Koristite AssetFlow kad god vam zatreba trenutna likvidnost ili želite pasivan prihod.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────  CTA  ───────────── -->
+  <section>
+    <h2>Želite isprobati AssetFlow?</h2>
+    <p style="text-align:center;max-width:700px;margin-inline:auto;margin-bottom:2rem;">
+      Pošaljite nam poruku i rezervirajte mjesto u beta programu.
+    </p>
+    <div style="display:flex;justify-content:center;">
+      <a href="mailto:info@assetflows.app" class="btn">Kontaktiraj nas</a>
+    </div>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. Sva prava pridržana.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

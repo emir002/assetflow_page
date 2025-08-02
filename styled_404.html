@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>404 – Stranica nije pronađena | AssetFlow</title>
+  <meta name="robots" content="noindex" />
+
+  <!-- Fonts & global CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+</head>
+
+<body>
+  <!-- ─────────────  SITE HEADER  ───────────── -->
+  <header id="site-header">
+    <nav>
+      <a href="/" class="logo-link">
+        <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="logo">
+      </a>
+
+      <a href="/#features">Značajke</a>
+      <a href="/#howitworks">Kako radi</a>
+      <a href="/#benefits">Prednosti</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/styled_kontakt.html">Kontakt</a>
+
+      <span class="lang-switch">
+        <a href="/styled_404.html" aria-label="Bosanski">🇧🇦</a>
+        <a href="/en/styled_404.html" aria-label="English">🇬🇧</a>
+      </span>
+    </nav>
+  </header>
+
+  <!-- ─────────────  HERO  ───────────── -->
+  <section class="page-hero">
+    <h2 style="font-size:4rem;margin-bottom:.5rem;">404</h2>
+    <p style="font-size:1.25rem;">Ups! Stranica koju tražite ne postoji.</p>
+    <a href="/" class="btn" style="margin-top:2rem;">Natrag na početnu</a>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. Sva prava pridržana.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

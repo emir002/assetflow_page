@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FAQ – AssetFlow</title>
+  <meta name="description" content="Odgovori na najčešća pitanja o AssetFlow platformi." />
+
+  <!-- Open-Graph / Twitter -->
+  <meta property="og:title" content="FAQ – AssetFlow" />
+  <meta property="og:description" content="Najčešća pitanja i odgovori o kolateralu, kamatama, osiguranju i još mnogo toga." />
+  <meta property="og:image" content="/assets/img/logo.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts & global CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+</head>
+
+<body>
+  <!-- ─────────────  SITE HEADER  ───────────── -->
+  <header id="site-header">
+    <nav>
+      <a href="/" class="logo-link">
+        <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="logo">
+      </a>
+
+      <a href="/#features">Značajke</a>
+      <a href="/#howitworks">Kako radi</a>
+      <a href="/#benefits">Prednosti</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#contact">Kontakt</a>
+
+      <span class="lang-switch">
+        <a href="/styled_faq.html" aria-label="Bosanski">🇧🇦</a>
+        <a href="/en/styled_faq.html" aria-label="English">🇬🇧</a>
+      </span>
+    </nav>
+  </header>
+
+  <!-- ─────────────  HERO  ───────────── -->
+  <section class="page-hero">
+    <h2>Često postavljena pitanja</h2>
+  </section>
+
+  <!-- ─────────────  FAQ LIST  ───────────── -->
+  <section id="faq">
+    <div class="grid">
+      <div class="card">
+        <h3>Što mogu koristiti kao kolateral?</h3>
+        <p>Trenutno podržavamo NFT-ove (Ethereum/Polygon), ERC-20 tokene, in-game iteme i kredite unutar aplikacija. Dodajemo nove lance i imovinu kontinuirano.</p>
+      </div>
+      <div class="card">
+        <h3>Koliko mogu posuditi?</h3>
+        <p>LTV omjer kreće se od 20–60&nbsp;% te ovisi o volatilnosti imovine i vašem on-chain kreditnom skoru.</p>
+      </div>
+      <div class="card">
+        <h3>Kako funkcionira osiguranje?</h3>
+        <p>Automatska polica pokriva zajmodavca do 80&nbsp;% vrijednosti zajma u slučaju naglog pada kolaterala ili propuštene otplate.</p>
+      </div>
+      <div class="card">
+        <h3>Koje su naknade?</h3>
+        <p>Platforma naplaćuje 2,5&nbsp;% iznosa zajma plus premiju osiguranja (~1&nbsp;%), podijeljenu sa zajmodavcem.</p>
+      </div>
+      <div class="card">
+        <h3>Mogu li prijevremeno otplatiti zajam?</h3>
+        <p>Da. Kamate se obračunavaju dnevno, tako da plaćate samo za dane korištenja kredita.</p>
+      </div>
+      <div class="card">
+        <h3>Što se događa ako vrijednost kolaterala naglo padne?</h3>
+        <p>Smart-contract automatski aktivira djelomičnu likvidaciju kako bi zajmodavac ostao pokriven, a osiguranje nadoknađuje razliku ako je potrebno.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. Sva prava pridržana.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

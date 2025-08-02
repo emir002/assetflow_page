@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kontakt – AssetFlow</title>
+  <meta name="description" content="Pošaljite nam poruku ili zatražite pristup beta programu AssetFlow-a." />
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Kontakt – AssetFlow" />
+  <meta property="og:description" content="Imate pitanja? Pošaljite upit timu AssetFlow." />
+  <meta property="og:image" content="/assets/img/logo.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts & global CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+</head>
+
+<body>
+  <!-- ─────────────  SITE HEADER  ───────────── -->
+  <header id="site-header">
+    <nav>
+      <a href="/" class="logo-link">
+        <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="logo">
+      </a>
+
+      <a href="/#features">Značajke</a>
+      <a href="/#howitworks">Kako radi</a>
+      <a href="/#benefits">Prednosti</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/styled_kontakt.html">Kontakt</a>
+
+      <span class="lang-switch">
+        <a href="/styled_kontakt.html" aria-label="Bosanski">🇧🇦</a>
+        <a href="/en/styled_kontakt.html" aria-label="English">🇬🇧</a>
+      </span>
+    </nav>
+  </header>
+
+  <!-- ─────────────  HERO  ───────────── -->
+  <section class="page-hero">
+    <h2>Kontaktirajte nas</h2>
+  </section>
+
+  <!-- ─────────────  CONTACT FORM  ───────────── -->
+  <section id="contact">
+    <h2>Pošaljite poruku</h2>
+
+    <form id="contactForm" style="max-width:600px;margin-inline:auto;">
+      <div class="grid">
+        <input type="text"     name="name"    placeholder="Vaše ime"      required />
+        <input type="email"    name="email"   placeholder="Vaš e-mail"    required />
+        <textarea              name="message" placeholder="Poruka…" rows="6" required></textarea>
+        <button type="submit" class="btn" style="width:max-content;">Pošalji</button>
+      </div>
+      <p id="formStatus" style="margin-top:1rem;text-align:center;"></p>
+    </form>
+
+    <p style="text-align:center;margin-top:2rem;">
+      Ili nam pišite direktno na
+      <a href="mailto:info@assetflows.app">info@assetflows.app</a>
+    </p>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. Sva prava pridržana.</p>
+  </footer>
+
+  <!-- ─────────────  SCRIPTS  ───────────── -->
+  <script type="module">
+    // serverless contact form – Cloudflare Pages Function at /api/contact
+    const form   = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = 'Slanje…';
+
+      const body = Object.fromEntries(new FormData(form));
+      try {
+        const r = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+
+        if (r.ok) {
+          status.textContent = 'Hvala! Poruka je uspješno poslana.';
+          form.reset();
+        } else {
+          status.textContent = 'Došlo je do greške – pokušajte ponovo.';
+        }
+      } catch {
+        status.textContent = 'Mrežna greška – provjerite vezu.';
+      }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact – AssetFlow</title>
+  <meta name="description" content="Send us a message or request early-beta access to AssetFlow." />
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Contact – AssetFlow" />
+  <meta property="og:description" content="Questions? Reach out to the AssetFlow team." />
+  <meta property="og:image" content="/assets/img/logo.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts & global CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+</head>
+
+<body>
+  <!-- ─────────────  SITE HEADER  ───────────── -->
+  <header id="site-header">
+    <nav>
+      <a href="/en/index.html" class="logo-link">
+        <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="logo">
+      </a>
+
+      <a href="/en/index.html#features">Features</a>
+      <a href="/en/index.html#howitworks">How&nbsp;it&nbsp;Works</a>
+      <a href="/en/index.html#benefits">Benefits</a>
+      <a href="/en/index.html#faq">FAQ</a>
+      <a href="/en/styled_kontakt.html">Contact</a>
+
+      <span class="lang-switch">
+        <a href="/styled_kontakt.html" aria-label="Bosnian">🇧🇦</a>
+        <a href="/en/styled_kontakt.html" aria-label="English">🇬🇧</a>
+      </span>
+    </nav>
+  </header>
+
+  <!-- ─────────────  HERO  ───────────── -->
+  <section class="page-hero">
+    <h2>Contact Us</h2>
+  </section>
+
+  <!-- ─────────────  CONTACT FORM  ───────────── -->
+  <section id="contact">
+    <h2>Send a Message</h2>
+
+    <form id="contactForm" style="max-width:600px;margin-inline:auto;">
+      <div class="grid">
+        <input  type="text"     name="name"    placeholder="Your name"    required />
+        <input  type="email"    name="email"   placeholder="Your e-mail"  required />
+        <textarea name="message" rows="6" placeholder="Message…" required></textarea>
+        <button type="submit" class="btn" style="width:max-content;">Send</button>
+      </div>
+      <p id="formStatus" style="margin-top:1rem;text-align:center;"></p>
+    </form>
+
+    <p style="text-align:center;margin-top:2rem;">
+      Or e-mail us directly at
+      <a href="mailto:info@assetflows.app">info@assetflows.app</a>
+    </p>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. All rights reserved.</p>
+  </footer>
+
+  <!-- ─────────────  SCRIPTS  ───────────── -->
+  <script type="module">
+    // Cloudflare Pages serverless contact form
+    const form   = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = 'Sending…';
+
+      const body = Object.fromEntries(new FormData(form));
+      try {
+        const r = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body)
+        });
+
+        if (r.ok) {
+          status.textContent = 'Thank you! Your message has been sent.';
+          form.reset();
+        } else {
+          status.textContent = 'Error – please try again.';
+        }
+      } catch {
+        status.textContent = 'Network error – check your connection.';
+      }
+    });
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Prednosti – AssetFlow</title>
+  <meta name="description" content="Saznajte zašto je AssetFlow najbrži i najsigurniji način da dobijete likvidnost iz digitalne imovine." />
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="Prednosti – AssetFlow" />
+  <meta property="og:description" content="Brzina, transparentnost, sigurnost i povoljniji uvjeti uz decentralizirani escrow." />
+  <meta property="og:image" content="/assets/img/logo.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts & global CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+</head>
+
+<body>
+  <!-- ─────────────  SITE HEADER  ───────────── -->
+  <header id="site-header">
+    <nav>
+      <a href="/" class="logo-link">
+        <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="logo">
+      </a>
+
+      <a href="/#features">Značajke</a>
+      <a href="/#howitworks">Kako radi</a>
+      <a href="/#benefits">Prednosti</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#contact">Kontakt</a>
+
+      <span class="lang-switch">
+        <a href="/styled_prednosti.html" aria-label="Bosanski">🇧🇦</a>
+        <a href="/en/styled_prednosti.html" aria-label="English">🇬🇧</a>
+      </span>
+    </nav>
+  </header>
+
+  <!-- ─────────────  HERO  ───────────── -->
+  <section class="page-hero">
+    <h2>Prednosti AssetFlow-a</h2>
+  </section>
+
+  <!-- ─────────────  BENEFIT CARDS  ───────────── -->
+  <section id="benefits">
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Brzina</h3>
+        <p>Od zahtjeva do isplate u prosjeku za manje od 5 minuta zahvaljujući automatiziranom escrowth-u.</p>
+      </div>
+      <div class="card">
+        <h3>Transparentnost</h3>
+        <p>Sve transakcije i kolateral zapisani su on-chain – 100&nbsp;% provjerljivo i revizorski sigurno.</p>
+      </div>
+      <div class="card">
+        <h3>Sigurnost</h3>
+        <p>Smart-contract escrow i ugrađeno osiguranje eliminiraju rizik krađe ili defolta.</p>
+      </div>
+      <div class="card">
+        <h3>Povoljniji uvjeti</h3>
+        <p>Dinamički LTV plus tržišna konkurencija snižavaju kamate i nude bolje rokove otplate.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────  CALL TO ACTION  ───────────── -->
+  <section>
+    <h2>Spremni za instant likvidnost?</h2>
+    <p style="text-align:center;max-width:700px;margin-inline:auto;margin-bottom:2rem;">
+      Kontaktirajte nas i saznajte kako AssetFlow može raditi za vas.
+    </p>
+    <div style="display:flex;justify-content:center;">
+      <a href="mailto:info@assetflows.app" class="btn">Kontakt</a>
+    </div>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. Sva prava pridržana.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

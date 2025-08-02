@@ -1,141 +1,184 @@
 <!DOCTYPE html>
-<html lang="hr">
+<html lang="bs">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AssetFlow – Unlock Liquidity from Digital Assets</title>
-  <meta name="description" content="Otključajte likvidnost iz svojih digitalnih dobara uz AssetFlow." />
-  <meta property="og:title" content="AssetFlow" />
-  <meta property="og:description" content="Otključajte likvidnost iz svojih digitalnih dobara uz AssetFlow." />
-  <meta property="og:image" content="/assets/img/logo.svg" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+
+  <title>AssetFlow – Oslobodite likvidnost iz digitalne imovine</title>
+
+  <!-- Fonts & global CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/global.css" />
+  <link rel="stylesheet" href="/assets/css/global.css">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+
+  <!-- Page-specific tweaks -->
+  <style>
+    /* ─────────  NAV  ───────── */
+    .top-nav{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:2rem;
+      flex-wrap:wrap;
+      margin-bottom:.5rem;
+    }
+
+    /* ─────────  LANGUAGE SWITCHER  ───────── */
+    .lang-switcher{
+      display:flex;
+      justify-content:center;
+      gap:.75rem;
+      font-size:1.35rem;
+      margin-bottom:2rem;
+    }
+
+    /* ─────────  HERO LOGO  ───────── */
+    .hero-logo{
+      height:140px;width:auto;
+      display:block;
+      margin:1.5rem auto 2rem;
+    }
+
+    /* ─────────  CONTACT FORM  ───────── */
+    #contactForm .grid{display:grid;gap:1rem;}
+    #contactForm input,
+    #contactForm textarea{
+      width:100%;padding:.75rem 1rem;border:1px solid #ddd;
+      border-radius:.5rem;font-size:1rem;
+    }
+    #contactForm button{
+      background:var(--primary);color:#fff;border:none;cursor:pointer;font-weight:600;
+    }
+    #contactForm button:hover{opacity:.9;}
+  </style>
 </head>
+
 <body>
-  <div id="site-header"></div>
+  <!-- ─────────────  HERO  ───────────── -->
+  <header>
+    <!-- centred nav -->
+    <nav class="top-nav">
+      <a href="#features">Značajke</a>
+      <a href="#howitworks">Kako radi</a>
+      <a href="#benefits">Prednosti</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Kontakt</a>
+    </nav>
 
-  <section class="hero">
-    <h2>Otključajte likvidnost iz digitalnih dobara</h2>
-    <p>NFT-ovi, kriptovalute, in‑game itemi i in‑app krediti – sigurno, brzo i potpuno decentralizirano.</p>
-    <a href="/kontakt.html" class="btn">Zatraži pristup</a>
-  </section>
+    <!-- centred language flags BELOW the menu -->
+    <div class="lang-switcher">
+      <a href="/index.html" aria-label="Bosanski">🇧🇦</a>
+      <a href="/en/index.html" aria-label="English">🇬🇧</a>
+    </div>
 
+    <!-- headline + logo -->
+    <h1 style="font-size:3rem;margin-bottom:.5rem;">AssetFlow</h1>
+    <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="hero-logo">
+    <p style="font-size:1.25rem;margin-bottom:2rem;max-width:700px;margin-inline:auto;">
+      Oslobodite likvidnost iz vaših digitalnih sredstava—NFT-ova, kriptovaluta, in-game itema
+      i in-app kredita – sigurno, brzo i potpuno decentralizirano.
+    </p>
+    <a href="#contact" class="btn">Zatraži pristup</a>
+  </header>
+
+  <!-- ─────────────  ZNAČAJKE  ───────────── -->
   <section id="features">
     <h2>Značajke</h2>
     <div class="grid grid-3">
-      <div class="card">
-        <h3>Širok spektar kolaterala</h3>
-        <p>Podržavamo NFT‑ove, ERC‑20 tokene, in‑game predmete i čak kredite unutar aplikacija.</p>
-      </div>
-      <div class="card">
-        <h3>AI procjena rizika</h3>
-        <p>Naš AI‑pogonjen model dodjeljuje LTV omjer u realnom vremenu na temelju volatilnosti i likvidnosti imovine.</p>
-      </div>
-      <div class="card">
-        <h3>Ugrađeno osiguranje</h3>
-        <p>Polica osiguranja automatski štiti zajmodavce od naglih padova vrijednosti kolaterala ili defolta.</p>
-      </div>
-      <div class="card">
-        <h3>P2P Marketplace</h3>
-        <p>Spajamo zajmoprimce i zajmodavce kroz decentraliziran, transparentan order‑book.</p>
-      </div>
-      <div class="card">
-        <h3>API & SDK</h3>
-        <p>Integrirajte AssetFlow u wallet‑e, igre i marketplace‑e uz samo nekoliko linija koda.</p>
-      </div>
-      <div class="card">
-        <h3>Brza isplata</h3>
-        <p>Fiat ili stablecoin sredstva stižu na račun u minutama, kolateral ostaje u escrowu smart‑contracta.</p>
-      </div>
+      <div class="card"><h3>Širok raspon kolaterala</h3><p>Podržavamo NFT-ove, ERC-20 tokene, in-game iteme pa čak i in-app kredite.</p></div>
+      <div class="card"><h3>AI procjena rizika</h3><p>Naš AI-pogonjen model dodjeljuje LTV omjer u realnom vremenu na temelju volatilnosti i likvidnosti imovine.</p></div>
+      <div class="card"><h3>Ugrađeno osiguranje</h3><p>Polica osiguranja automatski štiti zajmodavce od naglih padova vrijednosti kolaterala ili defolta.</p></div>
+      <div class="card"><h3>P2P Marketplace</h3><p>Spajamo zajmoprimce i zajmodavce kroz decentraliziran, transparentan order-book.</p></div>
+      <div class="card"><h3>API & SDK</h3><p>Integrirajte AssetFlow u wallet-e, igre i marketplace-ove uz samo par linija koda.</p></div>
+      <div class="card"><h3>Brze isplate</h3><p>Fiat ili stablecoini stižu u minutama dok kolateral ostaje u escrow-u.</p></div>
     </div>
   </section>
 
+  <!-- ─────────────  KAKO RADI  ───────────── -->
   <section id="howitworks">
-    <h2>Kako AssetFlow funkcionira</h2>
+    <h2>Kako AssetFlow radi</h2>
     <div class="grid grid-3">
-      <div class="step">
-        <div class="step-circle">1</div>
-        <h3>Poveži imovinu</h3>
-        <p>Povežite svoj kripto wallet ili game/account za prikaz imovine.</p>
-      </div>
-      <div class="step">
-        <div class="step-circle">2</div>
-        <h3>AI procjena i ponuda</h3>
-        <p>Naš AI engine procjenjuje vrijednost i nudi personalizirani LTV.</p>
-      </div>
-      <div class="step">
-        <div class="step-circle">3</div>
-        <h3>Escrow & isplata</h3>
-        <p>Kolateral se zaključava u smart‑contract uz osiguranje, sredstva su na vašem računu.</p>
-      </div>
-      <div class="step">
-        <div class="step-circle">4</div>
-        <h3>Otplata ili likvidacija</h3>
-        <p>Vratite kredit + kamatu i preuzmite imovinu ili sustav automatski likvidira kolateral.</p>
-      </div>
-      <div class="step">
-        <div class="step-circle">5</div>
-        <h3>Reputacijski boost</h3>
-        <p>Uredna otplata gradi vaš on‑chain kreditni skor za povoljnije buduće uvjete.</p>
-      </div>
-      <div class="step">
-        <div class="step-circle">6</div>
-        <h3>Earn & ponovi</h3>
-        <p>Nastavite koristiti AssetFlow za brzu likvidnost ili prihod od zajmova.</p>
-      </div>
+      <div class="step"><div class="step-circle">1</div><h3>Povežite imovinu</h3><p>Povežite svoj kripto wallet ili gamerski račun kako bismo prikazali vašu imovinu.</p></div>
+      <div class="step"><div class="step-circle">2</div><h3>AI procjena i ponuda</h3><p>AI engine procjenjuje vrijednost i predlaže personalizirani LTV.</p></div>
+      <div class="step"><div class="step-circle">3</div><h3>Escrow & isplata</h3><p>Kolateral se zaključava u smart-contract s osiguranjem, sredstva dolaze na vaš račun.</p></div>
+      <div class="step"><div class="step-circle">4</div><h3>Otplata ili likvidacija</h3><p>Vratite zajam + kamatu i preuzmite imovinu ili će sustav automatski likvidirati kolateral.</p></div>
+      <div class="step"><div class="step-circle">5</div><h3>Poboljšanje reputacije</h3><p>Pravovremena otplata gradi on-chain kreditni skor za bolje uvjete ubuduće.</p></div>
+      <div class="step"><div class="step-circle">6</div><h3>Zaradite & ponovite</h3><p>Nastavite koristiti AssetFlow za trenutnu likvidnost ili pasivan prihod.</p></div>
     </div>
   </section>
 
+  <!-- ─────────────  PREDNOSTI  ───────────── -->
   <section id="benefits">
     <h2>Prednosti korištenja AssetFlow-a</h2>
     <div class="grid grid-2">
-      <div class="card">
-        <h3>Brzina</h3>
-        <p>Od zahtjeva do isplate u prosjeku <strong>&lt; 5 minuta</strong>.</p>
-      </div>
-      <div class="card">
-        <h3>Transparentnost</h3>
-        <p>Sve transakcije zapisuju se na blockchain, 100 % provjerljivo i auditabilno.</p>
-      </div>
-      <div class="card">
-        <h3>Sigurnost</h3>
-        <p>Smart‑contract escrow i osiguranje uklanjaju rizik krađe ili defolta.</p>
-      </div>
-      <div class="card">
-        <h3>Povoljniji uvjeti</h3>
-        <p>Dinamički LTV i tržišna kompeticija spuštaju kamate.</p>
-      </div>
+      <div class="card"><h3>Brzina</h3><p>Od zahtjeva do isplate prosječno za &lt; 5 min.</p></div>
+      <div class="card"><h3>Transparentnost</h3><p>Sve transakcije su on-chain – 100 % provjerljive i revizorske.</p></div>
+      <div class="card"><h3>Sigurnost</h3><p>Escrow smart-contract i osiguranje eliminiraju rizik krađe ili defolta.</p></div>
+      <div class="card"><h3>Povoljniji uvjeti</h3><p>Dinamički LTV i tržišno natjecanje snižavaju kamate.</p></div>
     </div>
   </section>
 
+  <!-- ─────────────  FAQ  ───────────── -->
   <section id="faq">
-    <h2>Često postavljana pitanja</h2>
+    <h2>Često postavljena pitanja</h2>
     <div class="grid">
-      <div class="card">
-        <h3>Koju imovinu mogu koristiti kao kolateral?</h3>
-        <p>Trenutno podržavamo Ethereum‑bazirane NFT‑ove, ERC‑20 tokene, in‑game iteme (Immutable, Polygon) i in‑app kredite. Podrška za dodatne lance je u izradi.</p>
-      </div>
-      <div class="card">
-        <h3>Koliko mogu posuditi?</h3>
-        <p>LTV se kreće od 20–60 %, ovisno o volatilnosti imovine i vašem reputacijskom score‑u.</p>
-      </div>
-      <div class="card">
-        <h3>Kako funkcionira osiguranje?</h3>
-        <p>Automatska polica pokriva gubitke zajmodavaca do 80 % u slučaju naglog pada kolaterala ili neplaćanja.</p>
-      </div>
-      <div class="card">
-        <h3>Koje su naknade?</h3>
-        <p>Platforma naplaćuje 2,5 % od iznosa kredita + premiju osiguranja (~1 %) koju dijelimo sa zajmodavcem.</p>
-      </div>
+      <div class="card"><h3>Koju imovinu mogu koristiti kao kolateral?</h3><p>Trenutno podržavamo NFT-ove na Ethereumu, ERC-20 tokene, in-game iteme (Immutable, Polygon) i in-app kredite. Uskoro dolaze i druge mreže.</p></div>
+      <div class="card"><h3>Koliko mogu posuditi?</h3><p>LTV se kreće od 20 – 60 % ovisno o volatilnosti imovine i vašem reputacijskom skoru.</p></div>
+      <div class="card"><h3>Kako radi osiguranje?</h3><p>Automatska polica pokriva zajmodavce do 80 % u slučaju naglog pada kolaterala ili propuštene otplate.</p></div>
+      <div class="card"><h3>Koje su naknade?</h3><p>Platforma naplaćuje 2,5 % iznosa zajma + premiju osiguranja (~1 %), dijeljenu sa zajmodavcem.</p></div>
     </div>
   </section>
 
-  <div id="site-footer"></div>
-  <button id="toTop" aria-label="Povratak na vrh">↑</button>
-  <script src="/assets/js/main.js" defer></script>
+  <!-- ─────────────  KONTAKT  ───────────── -->
+  <section id="contact">
+    <h2>Kontaktirajte nas</h2>
+    <p style="text-align:center;max-width:700px;margin-inline:auto;margin-bottom:1.5rem;">
+      Imate pitanja ili želite pristup beta verziji? Ispunite obrazac ili nam pišite na
+      <a href="mailto:info@assetflows.app">info@assetflows.app</a>.
+    </p>
+
+    <!-- Visible contact form -->
+    <form id="contactForm" style="max-width:600px;margin-inline:auto;">
+      <div class="grid">
+        <input  type="text"   name="name"    placeholder="Vaše ime"    required>
+        <input  type="email"  name="email"   placeholder="Vaš e-mail"  required>
+        <textarea name="message" rows="6" placeholder="Poruka…" required></textarea>
+        <button type="submit" class="btn" style="width:max-content;">Pošalji</button>
+      </div>
+      <p id="formStatus" style="margin-top:1rem;text-align:center;"></p>
+    </form>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. Sva prava pridržana.</p>
+  </footer>
+
+  <!-- ─────────────  SCRIPTS  ───────────── -->
+  <script type="module">
+    /* Cloudflare Pages function – /api/contact */
+    const form   = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = 'Slanje…';
+
+      const body = Object.fromEntries(new FormData(form));
+      try{
+        const r = await fetch('/api/contact',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
+        if(r.ok){status.textContent='Hvala! Poruka je uspješno poslana.';form.reset();}
+        else    {status.textContent='Došlo je do greške — pokušajte ponovo.';}
+      }catch{status.textContent='Mrežna greška — provjerite vezu.';}
+    });
+
+    /* copyright year */
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>AssetFlow – Unlock Liquidity from Digital Assets</title>
+  <meta name="description" content="Instantly unlock liquidity from NFTs, crypto, game items and in-app credits – safely and decentralised." />
+
+  <!-- Google Fonts & global CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+
+  <!-- Page-specific tweaks -->
+  <style>
+    /* ─────────  NAV  ───────── */
+    .top-nav{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      gap:2rem;
+      flex-wrap:wrap;
+      margin-bottom:.5rem;
+    }
+
+    /* ─────────  LANGUAGE SWITCHER  ───────── */
+    .lang-switcher{
+      display:flex;
+      justify-content:center;
+      gap:.75rem;
+      font-size:1.35rem;
+      margin-bottom:2rem;
+    }
+
+    /* ─────────  HERO LOGO  ───────── */
+    .hero-logo{
+      height:140px;
+      width:auto;
+      display:block;
+      margin:1.5rem auto 2rem;
+    }
+
+    /* ─────────  CONTACT FORM  ───────── */
+    #contactForm .grid{display:grid;gap:1rem;}
+    #contactForm input,
+    #contactForm textarea{
+      width:100%;padding:.75rem 1rem;border:1px solid #ddd;
+      border-radius:.5rem;font-size:1rem;
+    }
+    #contactForm button{
+      background:var(--primary);color:#fff;border:none;cursor:pointer;font-weight:600;
+    }
+    #contactForm button:hover{opacity:.9;}
+  </style>
+</head>
+
+<body>
+  <!-- ─────────────  HERO  ───────────── -->
+  <header>
+    <!-- centred navigation -->
+    <nav class="top-nav">
+      <a href="#features">Features</a>
+      <a href="#howitworks">How&nbsp;It&nbsp;Works</a>
+      <a href="#benefits">Benefits</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- centred language flags below the menu -->
+    <div class="lang-switcher">
+      <a href="/index.html"     aria-label="Bosnian">🇧🇦</a>
+      <a href="/en/index.html" aria-label="English">🇬🇧</a>
+    </div>
+
+    <!-- headline + centred logo -->
+    <h1 style="font-size:3rem;margin-bottom:.5rem;">AssetFlow</h1>
+    <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="hero-logo">
+
+    <p style="font-size:1.25rem;margin-bottom:2rem;max-width:700px;margin-inline:auto;">
+      Unlock liquidity from your NFTs, crypto tokens, in-game items and in-app credits – securely,
+      quickly, and in a fully decentralised way.
+    </p>
+    <a href="#contact" class="btn">Request Access</a>
+  </header>
+
+  <!-- ─────────────  FEATURES  ───────────── -->
+  <section id="features">
+    <h2>Features</h2>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Wide collateral range</h3>
+        <p>We support NFTs, ERC-20 tokens, game items and even in-app credits.</p>
+      </div>
+      <div class="card">
+        <h3>AI risk assessment</h3>
+        <p>Our AI-powered engine assigns an LTV ratio in real time based on volatility and liquidity.</p>
+      </div>
+      <div class="card">
+        <h3>Built-in insurance</h3>
+        <p>An automatic policy protects lenders against sudden price drops or default.</p>
+      </div>
+      <div class="card">
+        <h3>P2P marketplace</h3>
+        <p>Borrowers and lenders meet via a decentralised, transparent order book.</p>
+      </div>
+      <div class="card">
+        <h3>API & SDK</h3>
+        <p>Integrate AssetFlow into wallets, games and marketplaces with just a few lines of code.</p>
+      </div>
+      <div class="card">
+        <h3>Fast payouts</h3>
+        <p>Fiat or stablecoins land in minutes while collateral stays in escrow.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────  HOW IT WORKS  ───────────── -->
+  <section id="howitworks">
+    <h2>How AssetFlow Works</h2>
+    <div class="grid grid-3">
+      <div class="step">
+        <div class="step-circle">1</div>
+        <h3>Connect assets</h3>
+        <p>Connect your crypto wallet or game account so we can display your holdings.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">2</div>
+        <h3>AI appraisal & offer</h3>
+        <p>Our engine values the assets and proposes a personalised LTV.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">3</div>
+        <h3>Escrow & payout</h3>
+        <p>Collateral is locked in a smart contract with insurance; funds arrive in your account.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">4</div>
+        <h3>Repay or liquidation</h3>
+        <p>Repay principal + interest and reclaim assets, or the system liquidates collateral.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">5</div>
+        <h3>Reputation boost</h3>
+        <p>On-time repayment builds an on-chain credit score for better future terms.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">6</div>
+        <h3>Earn & repeat</h3>
+        <p>Keep using AssetFlow for instant liquidity or passive income.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────  BENEFITS  ───────────── -->
+  <section id="benefits">
+    <h2>Benefits of AssetFlow</h2>
+    <div class="grid grid-2">
+      <div class="card">
+        <h3>Speed</h3>
+        <p>From request to payout in <strong>under 5 minutes</strong> on average.</p>
+      </div>
+      <div class="card">
+        <h3>Transparency</h3>
+        <p>Every transaction is on-chain – 100 % auditable.</p>
+      </div>
+      <div class="card">
+        <h3>Security</h3>
+        <p>Smart-contract escrow and insurance remove theft or default risk.</p>
+      </div>
+      <div class="card">
+        <h3>Better terms</h3>
+        <p>Dynamic LTV plus market competition push interest rates down.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────  FAQ  ───────────── -->
+  <section id="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Which assets can I use as collateral?</h3>
+        <p>We currently support Ethereum-based NFTs, ERC-20 tokens, game items (Immutable, Polygon) and in-app credits. More chains coming soon.</p>
+      </div>
+      <div class="card">
+        <h3>How much can I borrow?</h3>
+        <p>LTV ranges from 20–60 % depending on asset volatility and your reputation score.</p>
+      </div>
+      <div class="card">
+        <h3>How does insurance work?</h3>
+        <p>An automatic policy covers lenders up to 80 % in case of a sudden collateral drop or missed repayment.</p>
+      </div>
+      <div class="card">
+        <h3>What are the fees?</h3>
+        <p>The platform charges 2.5 % of the loan amount + an insurance premium (~1 %), shared with the lender.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────  CONTACT  ───────────── -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;max-width:700px;margin-inline:auto;margin-bottom:1.5rem;">
+      Got questions or want early-beta access? Fill in the form or e-mail
+      <a href="mailto:info@assetflows.app">info@assetflows.app</a>.
+    </p>
+
+    <!-- visible Cloudflare-compatible contact form -->
+    <form id="contactForm" style="max-width:600px;margin-inline:auto;">
+      <div class="grid">
+        <input  type="text"   name="name"    placeholder="Your name"     required>
+        <input  type="email"  name="email"   placeholder="Your e-mail"   required>
+        <textarea name="message" rows="6" placeholder="Message…" required></textarea>
+        <button type="submit" class="btn" style="width:max-content;">Send</button>
+      </div>
+      <p id="formStatus" style="margin-top:1rem;text-align:center;"></p>
+    </form>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. All rights reserved.</p>
+  </footer>
+
+  <!-- ─────────────  SCRIPTS  ───────────── -->
+  <script type="module">
+    /* Cloudflare Pages function – /api/contact */
+    const form   = document.getElementById('contactForm');
+    const status = document.getElementById('formStatus');
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.textContent = 'Sending…';
+
+      const body = Object.fromEntries(new FormData(form));
+      try{
+        const r = await fetch('/api/contact', {
+          method : 'POST',
+          headers: { 'Content-Type':'application/json' },
+          body   : JSON.stringify(body)
+        });
+        if(r.ok){
+          status.textContent = 'Thanks! Your message has been sent.';
+          form.reset();
+        }else{
+          status.textContent = 'There was an error — please try again.';
+        }
+      }catch{
+        status.textContent = 'Network error — check your connection.';
+      }
+    });
+
+    /* copyright year */
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

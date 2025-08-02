@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FAQ – AssetFlow</title>
+  <meta name="description" content="Answers to the most common questions about AssetFlow’s collateral, LTV, insurance and fees." />
+
+  <!-- Social sharing -->
+  <meta property="og:title" content="FAQ – AssetFlow" />
+  <meta property="og:description" content="Find out everything about borrowing, interest, insurance and collateral on AssetFlow." />
+  <meta property="og:image" content="/assets/img/logo.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts & global CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+</head>
+
+<body>
+  <!-- ─────────────  SITE HEADER  ───────────── -->
+  <header id="site-header">
+    <nav>
+      <a href="/en/index.html" class="logo-link">
+        <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="logo">
+      </a>
+
+      <a href="/en/index.html#features">Features</a>
+      <a href="/en/index.html#howitworks">How&nbsp;it&nbsp;Works</a>
+      <a href="/en/index.html#benefits">Benefits</a>
+      <a href="/en/index.html#faq">FAQ</a>
+      <a href="/en/styled_kontakt.html">Contact</a>
+
+      <span class="lang-switch">
+        <a href="/styled_faq.html" aria-label="Bosnian">🇧🇦</a>
+        <a href="/en/styled_faq.html" aria-label="English">🇬🇧</a>
+      </span>
+    </nav>
+  </header>
+
+  <!-- ─────────────  HERO  ───────────── -->
+  <section class="page-hero">
+    <h2>Frequently Asked Questions</h2>
+  </section>
+
+  <!-- ─────────────  FAQ GRID  ───────────── -->
+  <section id="faq">
+    <div class="grid">
+      <div class="card">
+        <h3>Which assets can I use as collateral?</h3>
+        <p>We currently support Ethereum or Polygon NFTs, ERC-20 tokens, game items and in-app credits. New chains are added continuously.</p>
+      </div>
+      <div class="card">
+        <h3>How much can I borrow?</h3>
+        <p>LTV ratios range from 20–60&nbsp;% depending on asset volatility and your on-chain credit score.</p>
+      </div>
+      <div class="card">
+        <h3>How does the insurance work?</h3>
+        <p>An automatic policy protects the lender up to 80&nbsp;% of the loan amount if collateral value drops or repayment is missed.</p>
+      </div>
+      <div class="card">
+        <h3>What are the fees?</h3>
+        <p>The platform charges 2.5&nbsp;% of the loan amount plus an insurance premium (~1&nbsp;%), shared with the lender.</p>
+      </div>
+      <div class="card">
+        <h3>Can I repay early?</h3>
+        <p>Yes. Interest accrues daily, so you pay only for the days you use the loan.</p>
+      </div>
+      <div class="card">
+        <h3>What happens if collateral value crashes?</h3>
+        <p>The smart contract triggers a partial liquidation to keep the lender covered, while insurance tops up any remaining gap.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

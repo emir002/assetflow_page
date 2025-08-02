@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Značajke – AssetFlow</title>
+  <meta name="description" content="Otključajte likvidnost iz svojih digitalnih dobara uz AssetFlow." />
+
+  <!-- Open Graph / Twitter Card -->
+  <meta property="og:title" content="AssetFlow" />
+  <meta property="og:description" content="Otključajte likvidnost iz svojih digitalnih dobara uz AssetFlow." />
+  <meta property="og:image" content="/assets/img/logo.svg" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts & global CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css" />
+
+  <!-- Favicon (SVG + PNG fallback) -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+</head>
+
+<body>
+  <!-- ─────────────  SITE HEADER (nav only)  ───────────── -->
+  <header id="site-header">
+    <nav>
+      <a href="/" class="logo-link">
+        <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="logo">
+      </a>
+
+      <a href="/#features">Značajke</a>
+      <a href="/#howitworks">Kako radi</a>
+      <a href="/#benefits">Prednosti</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#contact">Kontakt</a>
+
+      <span class="lang-switch">
+        <a href="/styled_znacajke.html" aria-label="Bosanski">🇧🇦</a>
+        <a href="/en/styled_znacajke.html" aria-label="English">🇬🇧</a>
+      </span>
+    </nav>
+  </header>
+
+  <!-- ─────────────  HERO  ───────────── -->
+  <section class="page-hero">
+    <h2>Značajke</h2>
+  </section>
+
+  <!-- ─────────────  FEATURE CARDS  ───────────── -->
+  <section id="features">
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Širok spektar kolaterala</h3>
+        <p>Podržavamo NFT-ove, ERC-20 tokene, in-game predmete i čak kredite unutar aplikacija.</p>
+      </div>
+      <div class="card">
+        <h3>AI procjena rizika</h3>
+        <p>Naš AI-pogonjen model dodjeljuje LTV omjer u realnom vremenu na temelju volatilnosti i likvidnosti imovine.</p>
+      </div>
+      <div class="card">
+        <h3>Ugrađeno osiguranje</h3>
+        <p>Polica osiguranja automatski štiti zajmodavce od naglih padova vrijednosti kolaterala ili defolta.</p>
+      </div>
+      <div class="card">
+        <h3>P2P Marketplace</h3>
+        <p>Spajamo zajmoprimce i zajmodavce kroz decentraliziran, transparentan order-book.</p>
+      </div>
+      <div class="card">
+        <h3>API & SDK</h3>
+        <p>Integrirajte AssetFlow u wallet-e, igre i marketplace-e uz samo nekoliko linija koda.</p>
+      </div>
+      <div class="card">
+        <h3>Brza isplata</h3>
+        <p>Fiat ili stablecoin sredstva stižu na račun u minutama, kolateral ostaje u escrowu smart-contracta.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────────  FOOTER PLACEHOLDER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. Sva prava pridržana.</p>
+  </footer>
+
+  <script>
+    // scroll-to-top button & other helpers (already defined in main.js)
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>404 – Page Not Found | AssetFlow</title>
+  <meta name="robots" content="noindex" />
+
+  <!-- Fonts & shared CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/global.css" />
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/svg+xml" href="/assets/img/logo.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png" />
+</head>
+
+<body>
+  <!-- ─────────────  SITE HEADER  ───────────── -->
+  <header id="site-header">
+    <nav>
+      <a href="/en/index.html" class="logo-link">
+        <img src="/assets/img/logo.svg" alt="AssetFlow logo" class="logo">
+      </a>
+
+      <a href="/en/index.html#features">Features</a>
+      <a href="/en/index.html#howitworks">How&nbsp;it&nbsp;Works</a>
+      <a href="/en/index.html#benefits">Benefits</a>
+      <a href="/en/index.html#faq">FAQ</a>
+      <a href="/en/styled_kontakt.html">Contact</a>
+
+      <span class="lang-switch">
+        <a href="/styled_404.html" aria-label="Bosnian">🇧🇦</a>
+        <a href="/en/styled_404.html" aria-label="English">🇬🇧</a>
+      </span>
+    </nav>
+  </header>
+
+  <!-- ─────────────  HERO  ───────────── -->
+  <section class="page-hero">
+    <h2 style="font-size:4rem;margin-bottom:.5rem;">404</h2>
+    <p style="font-size:1.25rem;">Oops! The page you’re looking for doesn’t exist.</p>
+    <a href="/en/index.html" class="btn" style="margin-top:2rem;">Back to Home</a>
+  </section>
+
+  <!-- ─────────────  FOOTER  ───────────── -->
+  <footer>
+    <p>&copy; <span id="year"></span> AssetFlow. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="/assets/js/main.js" defer></script>
+</body>
+</html>
